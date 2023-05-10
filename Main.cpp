@@ -2,9 +2,10 @@
 
 int main()
 {
+
 	Engine engine;
 
-	engine.start();
+	engine.MainMenu();
 
 
 	return 0;

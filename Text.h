@@ -4,13 +4,18 @@
 class Text
 {
 private:
+	// Main menu
 	sf::Font m_Font;
-	sf::Text m_Text;
-	sf::Vector2f m_Position;
+	sf::Text m_Start;
+	sf::Text m_Continue;
+	sf::Text m_Exit;
+
 
 public:
 	Text();
-
-	sf::Text String();
+	// Main menu
+	sf::Text Start();
+	sf::Text Continue();
+	sf::Text Exit();
 };
 

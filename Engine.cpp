@@ -15,7 +15,7 @@ Engine::Engine()
 
 }
 
-void Engine::start()
+void Engine::MainMenu()
 {
 	sf::Clock clock;
 
@@ -24,8 +24,7 @@ void Engine::start()
 		sf::Event event;
 		while (m_Window.pollEvent(event))
 		{
-			if (event.type == sf::Event::Closed)
-				m_Window.close();
+			if (event.type == sf::Event::Closed) { m_Window.close(); }
 		}
 
 		sf::Time dt = clock.restart();
@@ -33,6 +32,6 @@ void Engine::start()
 
 		input();
 		update(dtAsSeconds);
-		draw();
+		conclusion();
 	}
 }

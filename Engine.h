@@ -8,26 +8,23 @@ class Engine
 private:
 	sf::RenderWindow m_Window;
 
-	/*
-	sf::Texture m_MenuTexture;
-	sf::Sprite m_MenuSprite;
-
-	sf::Texture m_ButtonTexture;
-	sf::Sprite m_ButtonSprite;
-	*/
-
 	Graphics m_MenuSprite;
 	Graphics m_ButtonSprite;
+	Graphics m_ButtonSpriteTwo;
+	Graphics m_ButtonSpriteThree;
 
-	Text m_Text;
+	Text m_Start;
+	Text m_Continue;
+	Text m_Exit;
+
 
 	void input();
 	void update(float dtAsSeconds);
-	void draw();
+	void conclusion();
 
 public:
 	Engine();
 
-	void start();
+	void MainMenu();
 };
 
