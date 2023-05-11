@@ -10,6 +10,7 @@ private:
 public:
 	Audio();
 
-	sf::Music MainMenuTheme();
+	void play();
+
 };
 

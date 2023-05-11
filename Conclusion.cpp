@@ -15,5 +15,9 @@ void Engine::conclusion()
 	m_Window.draw(m_Continue.Continue());
 	m_Window.draw(m_Exit.Exit());
 
+	// Audio
+	m_MainMenuTheme.play();
+	
+
 	m_Window.display();
 }

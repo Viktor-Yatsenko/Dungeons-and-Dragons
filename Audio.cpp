@@ -3,12 +3,14 @@
 Audio::Audio()
 {
 	m_MainMenuTheme.openFromFile("Audio\\MainMenu.ogg");
-	m_MainMenuTheme.setLoop(true);
+
 }
 
-sf::Music Audio::MainMenuTheme()
+void Audio::play()
 {
-	m_MainMenuTheme.play();
-	return sf::Music();
+	if (!m_MainMenuTheme.getStatus())
+	{
+		m_MainMenuTheme.play();
+	}
 }
 

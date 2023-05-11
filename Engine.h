@@ -1,7 +1,9 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
 #include "Text.h"
 #include "Graphics.h"
+#include "Audio.h"
 
 class Engine
 {
@@ -17,6 +19,7 @@ private:
 	Text m_Continue;
 	Text m_Exit;
 
+	Audio m_MainMenuTheme;
 
 	void input();
 	void update(float dtAsSeconds);
