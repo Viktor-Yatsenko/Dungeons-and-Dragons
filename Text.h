@@ -1,6 +1,8 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 
+
+
 class Text
 {
 private:
@@ -10,8 +12,8 @@ private:
 	sf::Text m_Continue;
 	sf::Text m_Exit;
 
-
 public:
+
 	Text();
 	// Main menu
 	sf::Text Start();

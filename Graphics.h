@@ -1,6 +1,8 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 
+
+
 class Graphics
 {
 private:
@@ -19,5 +21,6 @@ public:
 	sf::Sprite getButton();
 	sf::Sprite getButtonTwo();
 	sf::Sprite getButtonThree();
+
 };
 

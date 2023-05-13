@@ -2,18 +2,13 @@
 
 Engine::Engine()
 {
+	//m_Window.create(sf::VideoMode(1920, 1080), "Dungeons & Dragons", sf::Style::Fullscreen);
 	m_Window.create(sf::VideoMode(1920, 1080), "Dungeons & Dragons");
 	m_Window.setVerticalSyncEnabled(true);
 
-	//Graphics
-//Menu
-	//m_MenuTexture.loadFromFile("Texture\\Menu\\MainMenu.jpg");
-	//m_MenuSprite.setTexture(m_MenuTexture);
-	//Button
-	//m_ButtonTexture.loadFromFile("Texture\\Menu\\Button.png");
-	//m_ButtonSprite.setTexture(m_ButtonTexture);
-
 }
+
+
 
 void Engine::MainMenu()
 {
@@ -28,10 +23,12 @@ void Engine::MainMenu()
 		}
 
 		sf::Time dt = clock.restart();
-		float dtAsSeconds = dt.asSeconds();
-
-		input();
-		update(dtAsSeconds);
 		conclusion();
+		input();
+		float dtAsSeconds = dt.asSeconds();
+		update(dtAsSeconds);
+
 	}
 }
+
+

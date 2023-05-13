@@ -2,11 +2,13 @@
 
 Text::Text()
 {
+	
 	// Main menu
-	{ 
+	{
 		m_Font.loadFromFile("Font\\ShantellSans-VariableFont_BNCE,INFM,SPAC,wght.ttf");
 		m_Start.setFont(m_Font);
-
+		
+		//setFillColor
 		//Start
 		m_Start.setCharacterSize(30);
 		m_Start.setFillColor(sf::Color::White);
@@ -25,9 +27,7 @@ Text::Text()
 		m_Exit.setStyle(sf::Text::Bold);
 		m_Exit.move(640, 315);
 	}
-	
 }
-
 
 sf::Text Text::Start()
 {
