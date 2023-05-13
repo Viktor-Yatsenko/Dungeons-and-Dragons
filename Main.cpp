@@ -1,11 +1,11 @@
-#include "Engine.h"
+#include "MainMenu.h"
 
 int main()
 {
+	MainMenu Menu;
+	Menu.Menu();
 
-	Engine engine;
 
-	engine.MainMenu();
 
 	return 0;
 }

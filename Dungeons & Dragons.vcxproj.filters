@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Game.cpp">
+      <UniqueIdentifier>{8c412de4-7689-4078-84c0-1cdbb7a68e7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game.h">
+      <UniqueIdentifier>{3bc445de-c2dc-4e93-b157-32af4aba4788}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -30,14 +36,17 @@
     <ClCompile Include="Text.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Update.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="Graphics.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="Audio.cpp">
       <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenu.cpp">
+      <Filter>Game.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelOne.cpp">
+      <Filter>Game.cpp</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -52,6 +61,12 @@
     </ClInclude>
     <ClInclude Include="Audio.h">
       <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenu.h">
+      <Filter>Game.h</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelOne.h">
+      <Filter>Game.h</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

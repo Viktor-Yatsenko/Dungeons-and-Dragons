@@ -1,6 +1,7 @@
-#include "Engine.h"
+#include "MainMenu.h"
+#include "LevelOne.h"
 
-void Engine::conclusion()
+ void MainMenu::conclusionMenu()
 {
 	//Delete previous frame
 	m_Window.clear(sf::Color::White);
@@ -17,7 +18,15 @@ void Engine::conclusion()
 
 	// Audio
 	m_MainMenuTheme.play();
-	
+
 
 	m_Window.display();
 }
+
+ void LevelOne::conclusionLevelOne()
+ {
+	 //Delete previous frame
+	 m_Window.clear(sf::Color::White);
+	 //Texture
+
+ }

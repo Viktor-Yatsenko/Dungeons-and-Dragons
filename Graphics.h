@@ -1,7 +1,5 @@
 #pragma once
-#include <SFML/Graphics.hpp>
-
-
+#include "Engine.h"
 
 class Graphics
 {

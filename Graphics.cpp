@@ -12,7 +12,6 @@ Graphics::Graphics()
 	m_ButtonTexture.loadFromFile("Texture\\Menu\\Button.png");
 	m_ButtonSprite.setTexture(m_ButtonTexture);
 	m_ButtonSprite.setPosition(530, 0);
-
 	// 2
 	m_ButtonSpriteTwo.setTexture(m_ButtonTexture);
 	m_ButtonSpriteTwo.setPosition(530, 120);

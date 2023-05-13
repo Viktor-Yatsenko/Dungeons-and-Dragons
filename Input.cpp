@@ -1,8 +1,8 @@
-#include "Engine.h"
+#include "MainMenu.h"
+#include "LevelOne.h"
 
 
-
-void Engine::input()
+void MainMenu::inputMenu()
 {
 	/*
 			//Escape
@@ -32,4 +32,9 @@ void Engine::input()
 		m_Window.close();
 	}
 	
+}
+
+void LevelOne::inputLevelOne()
+{
+
 }

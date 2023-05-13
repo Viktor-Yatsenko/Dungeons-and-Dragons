@@ -8,11 +8,9 @@ Engine::Engine()
 
 }
 
-
-
+/*
 void Engine::MainMenu()
 {
-	sf::Clock clock;
 
 	while (m_Window.isOpen())
 	{
@@ -22,13 +20,13 @@ void Engine::MainMenu()
 			if (event.type == sf::Event::Closed) { m_Window.close(); }
 		}
 
-		sf::Time dt = clock.restart();
+
 		conclusion();
 		input();
-		float dtAsSeconds = dt.asSeconds();
-		update(dtAsSeconds);
 
 	}
 }
+*/
+
 
 
