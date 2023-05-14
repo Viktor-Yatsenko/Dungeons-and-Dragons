@@ -2,48 +2,38 @@
 
 Text::Text()
 {
-	
 	// Main menu
-	{
-		m_Font.loadFromFile("Font\\ShantellSans-VariableFont_BNCE,INFM,SPAC,wght.ttf");
-		m_Start.setFont(m_Font);
-		
-		//setFillColor
-		//Start
-		m_Start.setCharacterSize(30);
-		m_Start.setFillColor(sf::Color::White);
-		m_Start.setStyle(sf::Text::Bold);
-		m_Start.move(610, 75);
-		//Continue
-		m_Continue.setFont(m_Font);
-		m_Continue.setCharacterSize(30);
-		m_Continue.setFillColor(sf::Color::White);
-		m_Continue.setStyle(sf::Text::Bold);
-		m_Continue.move(565, 195);
-		//Exit
-		m_Exit.setFont(m_Font);
-		m_Exit.setCharacterSize(30);
-		m_Exit.setFillColor(sf::Color::White);
-		m_Exit.setStyle(sf::Text::Bold);
-		m_Exit.move(640, 315);
-	}
+	m_Font.loadFromFile("Font\\ShantellSans-VariableFont_BNCE,INFM,SPAC,wght.ttf");
+	m_Start.setFont(m_Font);
+
 }
 
-sf::Text Text::Start()
+void Text::TextMainMenu(sf::RenderWindow& m_Window)
 {
+	//Start
+	m_Start.setCharacterSize(30);
+	m_Start.setFillColor(sf::Color::White);
+	m_Start.setStyle(sf::Text::Bold);
+	m_Start.setPosition(610, 75);
 	m_Start.setString(L"Нова гра");
-	return m_Start;
-}
+	m_Window.draw(m_Start);
+	
+	//Continue
+	m_Settings.setFont(m_Font);
+	m_Settings.setCharacterSize(30);
+	m_Settings.setFillColor(sf::Color::White);
+	m_Settings.setStyle(sf::Text::Bold);
+	m_Settings.setPosition(565, 195);
+	m_Settings.setString(L"Налаштування");
+	m_Window.draw(m_Settings);
 
-sf::Text Text::Continue()
-{
-	m_Continue.setString(L"Налаштування");
-	return m_Continue;
-}
-
-sf::Text Text::Exit()
-{
+	//Exit
+	m_Exit.setFont(m_Font);
+	m_Exit.setCharacterSize(30);
+	m_Exit.setFillColor(sf::Color::White);
+	m_Exit.setStyle(sf::Text::Bold);
+	m_Exit.setPosition(640, 315);
 	m_Exit.setString(L"Вихід");
-	return m_Exit;
+	m_Window.draw(m_Exit);
 }
 

@@ -2,11 +2,12 @@
 
 Audio::Audio()
 {
+	// Main menu
 	m_MainMenuTheme.openFromFile("Audio\\MainMenu.ogg");
 
 }
 
-void Audio::play()
+void Audio::MusicMainMenu()
 {
 	if (!m_MainMenuTheme.getStatus())
 	{

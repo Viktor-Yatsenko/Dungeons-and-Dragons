@@ -4,21 +4,11 @@
 class Graphics
 {
 private:
-	sf::Texture m_MenuTexture;
-	sf::Sprite m_MenuSprite;
-
-	sf::Texture m_ButtonTexture;
-	sf::Sprite m_ButtonSprite;
-	sf::Sprite m_ButtonSpriteTwo;
-	sf::Sprite m_ButtonSpriteThree;
+	sf::Texture m_MenuTexture, m_ButtonTexture;
+	sf::Sprite m_MenuSprite, m_ButtonSprite, m_ButtonSpriteTwo, m_ButtonSpriteThree;
 
 public:
 	Graphics();
-
-	sf::Sprite getMenu();
-	sf::Sprite getButton();
-	sf::Sprite getButtonTwo();
-	sf::Sprite getButtonThree();
+	void MainMenuGraphics(sf::RenderWindow& m_Window);
 
 };
-

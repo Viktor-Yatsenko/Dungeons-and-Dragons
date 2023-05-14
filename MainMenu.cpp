@@ -10,8 +10,8 @@ void MainMenu::Menu()
 		{
 			if (event.type == sf::Event::Closed) { m_Window.close(); }
 		}
-
-		conclusionMenu();
 		inputMenu();
+		conclusionMenu( m_Window);
+		
 	}
 }

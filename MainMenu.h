@@ -1,6 +1,7 @@
 #pragma once
 #include "Engine.h"
 
+
 class MainMenu : public Engine
 {
 private:
@@ -8,18 +9,16 @@ private:
 	Graphics m_ButtonSprite;
 	Graphics m_ButtonSpriteTwo;
 	Graphics m_ButtonSpriteThree;
-
+	
 	Text m_Start;
-	Text m_Continue;
+	Text m_Settings;
 	Text m_Exit;
 
 	Audio m_MainMenuTheme;
-
+	
 public:
 	void Menu();
 	void inputMenu();
-	void conclusionMenu();
-
-	
+	void conclusionMenu(sf::RenderWindow& m_Window);
 };
 

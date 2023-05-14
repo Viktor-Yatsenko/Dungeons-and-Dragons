@@ -1,23 +1,24 @@
 #include "MainMenu.h"
 #include "LevelOne.h"
 
- void MainMenu::conclusionMenu()
+
+void MainMenu::conclusionMenu(sf::RenderWindow& m_Window)
 {
 	//Delete previous frame
-	m_Window.clear(sf::Color::White);
+	m_Window.clear(sf::Color::Black);
 	// Texture
-	m_Window.draw(m_MenuSprite.getMenu());
-	m_Window.draw(m_ButtonSprite.getButton());
-	m_Window.draw(m_ButtonSpriteTwo.getButtonTwo());
-	m_Window.draw(m_ButtonSpriteThree.getButtonThree());
-
+	m_MenuSprite.MainMenuGraphics(m_Window);
+	m_ButtonSprite.MainMenuGraphics(m_Window);
+	//m_ButtonSpriteTwo.MainMenuGraphics(m_Window);
+	//m_ButtonSpriteThree.MainMenuGraphics(m_Window);
+	
 	// Text
-	m_Window.draw(m_Start.Start());
-	m_Window.draw(m_Continue.Continue());
-	m_Window.draw(m_Exit.Exit());
-
+	m_Start.TextMainMenu( m_Window);
+	//m_Settings.text(m_Window);
+	//m_Exit.text(m_Window);
+	
 	// Audio
-	m_MainMenuTheme.play();
+	m_MainMenuTheme.MusicMainMenu();
 
 
 	m_Window.display();
