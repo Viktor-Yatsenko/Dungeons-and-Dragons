@@ -19,15 +19,15 @@ private:
 	Audio m_MainMenuTheme;
 
 	//level 1
-	Graphics m_DwarfAndGnomSprite;
+//	Graphics m_DwarfAndGnomSprite;
 public:
 	
 	void Menu(sf::Music& m_MainMenuTheme);
 	void inputMenu(sf::Music& m_MainMenuTheme);
 	void conclusionMenu(sf::RenderWindow& m_Window);
 	//level 1
-	void LevelOne();
-	void conclusionLevelOne(sf::RenderWindow& m_Window);
+	//void LevelOne();
+//	void conclusionLevelOne(sf::RenderWindow& m_Window);
 	
 };
 

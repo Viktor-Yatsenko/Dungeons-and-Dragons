@@ -1,5 +1,5 @@
 #include "MainMenu.h"
-//#include "LevelOne.h"
+#include "LevelOne.h"
 
 void MainMenu::conclusionMenu(sf::RenderWindow& m_Window)
 {
@@ -24,11 +24,12 @@ void MainMenu::conclusionMenu(sf::RenderWindow& m_Window)
 
 
 
-void MainMenu::conclusionLevelOne(sf::RenderWindow& m_Window)
+void LevelOne::conclusionLevelOne(sf::RenderWindow& m_Window)
  {
 	 //Delete previous frame
 	 m_Window.clear(sf::Color::White);
 	 //Texture
 	 m_DwarfAndGnomSprite.LevelOneGraphics(m_Window);
+	
 	 m_Window.display();
  }

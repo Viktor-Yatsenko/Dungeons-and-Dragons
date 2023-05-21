@@ -1,5 +1,5 @@
 #include "MainMenu.h"
-#include "Audio.h"
+#include "LevelOne.h"
 //#include "LevelOne.h"
 
 
@@ -19,11 +19,17 @@ void MainMenu::inputMenu(sf::Music& m_MainMenuTheme)
 		sf::Mouse::isButtonPressed(sf::Mouse::Left))
 	{
 		//m_MainMenuTheme.stop();
-		MainMenu menu;
+		//MainMenu menu;
 		//menu.m_MainMenuTheme.m_MainMenuTheme.stop();
-
 		m_Window.close();
-		menu.LevelOne();
+		if (!m_Window.isOpen())
+		{
+			m_MainMenuTheme.stop();
+		}
+		LevelOne levelOne;
+		levelOne.One();
+
+		//menu.LevelOne();
 		
 		//menu.LevelOne();
 		

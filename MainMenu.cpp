@@ -20,7 +20,7 @@ void MainMenu::Menu(sf::Music& m_MainMenuTheme)
 	}
 
 }
-
+/*
 void MainMenu::LevelOne()
 {
 	while (m_Window.isOpen())
@@ -34,3 +34,4 @@ void MainMenu::LevelOne()
 		conclusionLevelOne(m_Window);
 	}
 }
+*/
