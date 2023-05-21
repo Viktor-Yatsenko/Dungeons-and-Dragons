@@ -19,10 +19,9 @@ void MainMenu::conclusionMenu(sf::RenderWindow& m_Window)
 	// Audio
 	m_MainMenuTheme.MusicMainMenu();
 	
+
 	m_Window.display();
 }
-
-
 
 void LevelOne::conclusionLevelOne(sf::RenderWindow& m_Window)
  {
@@ -30,6 +29,9 @@ void LevelOne::conclusionLevelOne(sf::RenderWindow& m_Window)
 	 m_Window.clear(sf::Color::White);
 	 //Texture
 	 m_DwarfAndGnomSprite.LevelOneGraphics(m_Window);
-	
+
+	 m_BeckGroundSprite.LevelOneGraphics(m_Window);
+	 // Text
+	 m_Story.TextLevelOne(m_Window);
 	 m_Window.display();
  }

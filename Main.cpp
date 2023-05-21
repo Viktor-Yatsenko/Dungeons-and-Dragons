@@ -1,16 +1,13 @@
 #include "MainMenu.h"
-#include "LevelOne.h"
 #include "Engine.h"
 
 
-int main(sf::Music& m_MainMenuTheme)
+int main()
 {
 	system("dir");
 	MainMenu Menu;
-	Menu.Menu( m_MainMenuTheme);
+	Menu.Menu();
 	
-	//LevelOne LevelOne;
-	//LevelOne.One();
 
 	return 0;
 }

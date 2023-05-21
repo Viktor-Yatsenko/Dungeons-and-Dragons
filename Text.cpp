@@ -37,3 +37,12 @@ void Text::TextMainMenu(sf::RenderWindow& m_Window)
 	m_Window.draw(m_Exit);
 }
 
+void Text::TextLevelOne(sf::RenderWindow& m_Window)
+{
+	m_Story.setFont(m_Font);
+	m_Exit.setCharacterSize(30);
+	m_Exit.setFillColor(sf::Color::White);
+	m_Exit.setPosition(640, 315);
+	m_Exit.setString(L"Более пяти веков назад кланы дварфов и гномы заклю- чили соглашение, известное как Пакт Фанделвера, в со- ответствии с которым они разделили богатый рудник в загадочной Пещере Морского Эха.");
+	m_Window.draw(m_Story);
+}
