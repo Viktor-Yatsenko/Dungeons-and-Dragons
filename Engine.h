@@ -5,10 +5,13 @@
 #include "Audio.h"
 #include "Text.h"
 
+
 class Engine
 {
 public:
 	sf::RenderWindow m_Window;
+
 	Engine();
+
 };
 

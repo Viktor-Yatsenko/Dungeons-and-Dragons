@@ -1,6 +1,5 @@
 #include "MainMenu.h"
-#include "LevelOne.h"
-
+//#include "LevelOne.h"
 
 void MainMenu::conclusionMenu(sf::RenderWindow& m_Window)
 {
@@ -11,7 +10,7 @@ void MainMenu::conclusionMenu(sf::RenderWindow& m_Window)
 	m_ButtonSprite.MainMenuGraphics(m_Window);
 	//m_ButtonSpriteTwo.MainMenuGraphics(m_Window);
 	//m_ButtonSpriteThree.MainMenuGraphics(m_Window);
-	
+
 	// Text
 	m_Start.TextMainMenu( m_Window);
 	//m_Settings.text(m_Window);
@@ -19,15 +18,17 @@ void MainMenu::conclusionMenu(sf::RenderWindow& m_Window)
 	
 	// Audio
 	m_MainMenuTheme.MusicMainMenu();
-
-
+	
 	m_Window.display();
 }
 
- void LevelOne::conclusionLevelOne()
+
+
+void MainMenu::conclusionLevelOne(sf::RenderWindow& m_Window)
  {
 	 //Delete previous frame
 	 m_Window.clear(sf::Color::White);
 	 //Texture
-
+	 m_DwarfAndGnomSprite.LevelOneGraphics(m_Window);
+	 m_Window.display();
  }

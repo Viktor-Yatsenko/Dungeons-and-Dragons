@@ -1,7 +1,9 @@
+/*
 #include "LevelOne.h"
 
 void LevelOne::One()
 {
+	
 	while (m_Window.isOpen())
 	{
 		sf::Event event;
@@ -9,10 +11,11 @@ void LevelOne::One()
 		{
 			if (event.type == sf::Event::Closed) { m_Window.close(); }
 		}
-
-
-		conclusionLevelOne();
 		inputLevelOne();
+		conclusionLevelOne( m_Window);
 
 	}
+	
+
 }
+*/

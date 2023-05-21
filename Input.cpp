@@ -1,8 +1,10 @@
 #include "MainMenu.h"
-#include "LevelOne.h"
+#include "Audio.h"
+//#include "LevelOne.h"
 
 
-void MainMenu::inputMenu()
+
+void MainMenu::inputMenu(sf::Music& m_MainMenuTheme)
 {
 	/*
 			//Escape
@@ -16,8 +18,19 @@ void MainMenu::inputMenu()
 	if (sf::IntRect(530, 0, 300, 200).contains(sf::Mouse::getPosition(m_Window)) &&
 		sf::Mouse::isButtonPressed(sf::Mouse::Left))
 	{
-		
+		//m_MainMenuTheme.stop();
+		MainMenu menu;
+		//menu.m_MainMenuTheme.m_MainMenuTheme.stop();
+
 		m_Window.close();
+		menu.LevelOne();
+		
+		//menu.LevelOne();
+		
+		//menu.LevelOne();
+		//LevelOne levelOne;
+		//levelOne.One();
+		//m_Window.close();
 	}
 	//Settings
 	if (sf::IntRect(530, 120, 300, 200).contains(sf::Mouse::getPosition(m_Window)) &&
@@ -33,8 +46,9 @@ void MainMenu::inputMenu()
 	}
 	
 }
-
+/*
 void LevelOne::inputLevelOne()
 {
 
 }
+*/
